@@ -45,6 +45,12 @@ const Index = () => {
                 О питомнике
               </button>
               <button 
+                onClick={() => scrollToSection('kittens')}
+                className="text-foreground hover:text-primary transition-colors"
+              >
+                Свободные котята
+              </button>
+              <button 
                 onClick={() => scrollToSection('gallery')}
                 className="text-foreground hover:text-primary transition-colors"
               >
@@ -73,6 +79,12 @@ const Index = () => {
                   className="text-left text-foreground hover:text-primary transition-colors py-2 border-b border-border"
                 >
                   О питомнике
+                </button>
+                <button 
+                  onClick={() => scrollToSection('kittens')}
+                  className="text-left text-foreground hover:text-primary transition-colors py-2 border-b border-border"
+                >
+                  Свободные котята
                 </button>
                 <button 
                   onClick={() => scrollToSection('gallery')}
@@ -159,6 +171,128 @@ const Index = () => {
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="kittens" className="py-20 px-6 bg-muted/30">
+        <div className="container mx-auto">
+          <h2 className="text-5xl font-bold text-center text-primary mb-16">Свободные котята</h2>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <img 
+                src="https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/3f4a8acf-b2a6-46f6-aad1-960704470bcb.jpg"
+                alt="Котёнок Луна"
+                className="w-full h-64 object-cover"
+              />
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-semibold mb-4">Луна</h3>
+                <div className="space-y-2 text-muted-foreground mb-6">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Calendar" size={18} className="text-accent" />
+                    <span>Дата рождения: 15 сентября 2024</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Palette" size={18} className="text-accent" />
+                    <span>Окрас: голубой</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Sparkles" size={18} className="text-accent" />
+                    <span>Пол: кошечка</span>
+                  </div>
+                </div>
+                <Button 
+                  onClick={() => scrollToSection('contact')}
+                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                >
+                  Забронировать
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <img 
+                src="https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/1f5d5a8f-c4da-4711-83c9-f82b6f535fd2.jpg"
+                alt="Котёнок Барон"
+                className="w-full h-64 object-cover"
+              />
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-semibold mb-4">Барон</h3>
+                <div className="space-y-2 text-muted-foreground mb-6">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Calendar" size={18} className="text-accent" />
+                    <span>Дата рождения: 20 августа 2024</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Palette" size={18} className="text-accent" />
+                    <span>Окрас: лиловый</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Sparkles" size={18} className="text-accent" />
+                    <span>Пол: котик</span>
+                  </div>
+                </div>
+                <Button 
+                  onClick={() => scrollToSection('contact')}
+                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                >
+                  Забронировать
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <img 
+                src="https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/c31e0fa1-657c-4492-88b1-dc335b555103.jpg"
+                alt="Котёнок Амелия"
+                className="w-full h-64 object-cover"
+              />
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-semibold mb-4">Амелия</h3>
+                <div className="space-y-2 text-muted-foreground mb-6">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Calendar" size={18} className="text-accent" />
+                    <span>Дата рождения: 5 октября 2024</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Palette" size={18} className="text-accent" />
+                    <span>Окрас: кремовый</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Sparkles" size={18} className="text-accent" />
+                    <span>Пол: кошечка</span>
+                  </div>
+                </div>
+                <Button 
+                  onClick={() => scrollToSection('contact')}
+                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                >
+                  Забронировать
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="mt-12 text-center bg-card p-8 rounded-2xl">
+            <h3 className="text-2xl font-semibold mb-4">Условия приобретения</h3>
+            <div className="grid md:grid-cols-3 gap-6 text-left">
+              <div>
+                <Icon name="FileCheck" size={24} className="text-accent mb-3" />
+                <h4 className="font-semibold mb-2">Документы</h4>
+                <p className="text-sm text-muted-foreground">Метрика, ветпаспорт, договор купли-продажи</p>
+              </div>
+              <div>
+                <Icon name="Shield" size={24} className="text-accent mb-3" />
+                <h4 className="font-semibold mb-2">Здоровье</h4>
+                <p className="text-sm text-muted-foreground">Все прививки по возрасту, обработка от паразитов</p>
+              </div>
+              <div>
+                <Icon name="Heart" size={24} className="text-accent mb-3" />
+                <h4 className="font-semibold mb-2">Поддержка</h4>
+                <p className="text-sm text-muted-foreground">Консультации и помощь после приобретения</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
