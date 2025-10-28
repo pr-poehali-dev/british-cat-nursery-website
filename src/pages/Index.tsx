@@ -120,8 +120,7 @@ const Index = () => {
               <h2 className="text-6xl font-bold text-primary mb-6">
                 Питомник британских кошек в Москве
               </h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">Вы явно заглянули сюда в поисках нового друга! Мы на 99% уверены, что Ваше сердце будет украдено именно нашим котёнком. 
-Мы очень счастливы находиться в окружении своих мурчащих британцев и готовы поделиться этим счастьем с Вами!</p>
+              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">Вы явно заглянули сюда в поисках нового друга! Мы на 99% уверены, что Ваше сердце будет украдено именно нашим котёнком. Знакомьтесь с нами на сайте и в Telegram, влюбляйтесь и приходите забирать счастье в свой дом!</p>
               <Button 
                 onClick={() => scrollToSection('contact')}
                 className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg"
