@@ -157,7 +157,12 @@ const Index = () => {
               </CardContent>
             </Card>
             
-            <Card className="hover:shadow-xl transition-shadow duration-300">
+            <Card className="hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              <img 
+                src="https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/1f5d5a8f-c4da-4711-83c9-f82b6f535fd2.jpg"
+                alt="Забота о котятах"
+                className="w-full h-48 object-cover"
+              />
               <CardContent className="p-8 text-center">
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Icon name="Heart" size={32} className="text-accent" />
