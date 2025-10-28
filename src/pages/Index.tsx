@@ -7,9 +7,11 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const scrollToSection = (section: string) => {
     setActiveSection(section);
+    setIsMobileMenuOpen(false);
     const element = document.getElementById(section);
     element?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -20,6 +22,15 @@ const Index = () => {
         <nav className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <h1 className="text-3xl font-bold text-primary">БриМурр</h1>
+            
+            <button 
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden text-foreground hover:text-primary transition-colors"
+              aria-label="Toggle menu"
+            >
+              <Icon name={isMobileMenuOpen ? "X" : "Menu"} size={28} />
+            </button>
+            
             <div className="hidden md:flex gap-8">
               <button 
                 onClick={() => scrollToSection('home')}
@@ -47,6 +58,37 @@ const Index = () => {
               </button>
             </div>
           </div>
+          
+          {isMobileMenuOpen && (
+            <div className="md:hidden mt-4 pb-4 animate-fade-in">
+              <div className="flex flex-col gap-4">
+                <button 
+                  onClick={() => scrollToSection('home')}
+                  className="text-left text-foreground hover:text-primary transition-colors py-2 border-b border-border"
+                >
+                  Главная
+                </button>
+                <button 
+                  onClick={() => scrollToSection('about')}
+                  className="text-left text-foreground hover:text-primary transition-colors py-2 border-b border-border"
+                >
+                  О питомнике
+                </button>
+                <button 
+                  onClick={() => scrollToSection('gallery')}
+                  className="text-left text-foreground hover:text-primary transition-colors py-2 border-b border-border"
+                >
+                  Галерея
+                </button>
+                <button 
+                  onClick={() => scrollToSection('contact')}
+                  className="text-left text-foreground hover:text-primary transition-colors py-2"
+                >
+                  Контакты
+                </button>
+              </div>
+            </div>
+          )}
         </nav>
       </header>
 
