@@ -94,10 +94,19 @@ const Index = () => {
                 </button>
                 <button 
                   onClick={() => scrollToSection('contact')}
-                  className="text-left text-foreground hover:text-primary transition-colors py-2"
+                  className="text-left text-foreground hover:text-primary transition-colors py-2 border-b border-border"
                 >
                   Контакты
                 </button>
+                <a 
+                  href="https://t.me/brimurr" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-left text-foreground hover:text-primary transition-colors py-3 bg-accent/10 px-4 rounded-lg"
+                >
+                  <Icon name="Send" size={20} className="text-accent" />
+                  <span className="font-semibold">Написать в Telegram</span>
+                </a>
               </div>
             </div>
           )}
