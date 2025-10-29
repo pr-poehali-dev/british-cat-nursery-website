@@ -154,22 +154,22 @@ const Index = () => {
             <Card className="hover:shadow-xl transition-shadow duration-300 overflow-hidden">
               <div className="grid grid-cols-2 gap-1">
                 <img 
-                  src="https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/1f5d5a8f-c4da-4711-83c9-f82b6f535fd2.jpg"
+                  src="https://cdn.poehali.dev/files/81b30d6f-d1c7-40b6-ade8-2d6fb1e3229a.jpg"
                   alt="Забота о котятах 1"
                   className="w-full h-32 object-cover"
                 />
                 <img 
-                  src="https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/1f5d5a8f-c4da-4711-83c9-f82b6f535fd2.jpg"
+                  src="https://cdn.poehali.dev/files/81b30d6f-d1c7-40b6-ade8-2d6fb1e3229a.jpg"
                   alt="Забота о котятах 2"
                   className="w-full h-32 object-cover"
                 />
                 <img 
-                  src="https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/1f5d5a8f-c4da-4711-83c9-f82b6f535fd2.jpg"
+                  src="https://cdn.poehali.dev/files/81b30d6f-d1c7-40b6-ade8-2d6fb1e3229a.jpg"
                   alt="Забота о котятах 3"
                   className="w-full h-32 object-cover"
                 />
                 <img 
-                  src="https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/1f5d5a8f-c4da-4711-83c9-f82b6f535fd2.jpg"
+                  src="https://cdn.poehali.dev/files/81b30d6f-d1c7-40b6-ade8-2d6fb1e3229a.jpg"
                   alt="Забота о котятах 4"
                   className="w-full h-32 object-cover"
                 />
