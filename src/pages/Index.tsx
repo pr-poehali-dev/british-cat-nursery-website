@@ -117,9 +117,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <h2 className="text-6xl font-bold text-primary mb-6">
-                Питомник британских кошек в Москве
-              </h2>
+              <h2 className="text-6xl font-bold text-primary mb-6">Домашний питомник британских кошек в Москве</h2>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">Вы явно заглянули сюда в поисках нового друга! Мы на 99% уверены, что Ваше сердце будет украдено именно нашим котёнком. Знакомьтесь с нами на сайте и в Telegram, влюбляйтесь и приходите забирать счастье в свой дом!</p>
               <Button 
                 onClick={() => scrollToSection('contact')}
