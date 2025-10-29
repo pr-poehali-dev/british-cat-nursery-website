@@ -154,17 +154,17 @@ const Index = () => {
             <Card className="hover:shadow-xl transition-shadow duration-300 overflow-hidden">
               <div className="grid grid-cols-2 gap-1">
                 <img 
-                  src="https://cdn.poehali.dev/files/81b30d6f-d1c7-40b6-ade8-2d6fb1e3229a.jpg"
+                  src="https://cdn.poehali.dev/files/f79a51c0-e5ac-4a57-91f6-9956c8d65713.jpg"
                   alt="Забота о котятах 1"
                   className="w-full h-32 object-cover"
                 />
                 <img 
-                  src="https://cdn.poehali.dev/files/81b30d6f-d1c7-40b6-ade8-2d6fb1e3229a.jpg"
+                  src="https://cdn.poehali.dev/files/2878a398-cfd7-4349-9218-6888cde0bc6e.jpg"
                   alt="Забота о котятах 2"
                   className="w-full h-32 object-cover"
                 />
                 <img 
-                  src="https://cdn.poehali.dev/files/81b30d6f-d1c7-40b6-ade8-2d6fb1e3229a.jpg"
+                  src="https://cdn.poehali.dev/files/7744596d-6474-4093-a4f0-d77ce00f2a1a.jpg"
                   alt="Забота о котятах 3"
                   className="w-full h-32 object-cover"
                 />
