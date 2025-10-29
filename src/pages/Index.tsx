@@ -147,9 +147,7 @@ const Index = () => {
                   <Icon name="Award" size={32} className="text-accent" />
                 </div>
                 <h3 className="text-2xl font-semibold mb-4">Профессионализм</h3>
-                <p className="text-muted-foreground">
-                  Многолетний опыт разведения британских кошек с соблюдением всех стандартов породы
-                </p>
+                <p className="text-muted-foreground">Многолетний опыт взаимодействия с породой. Около 100 состоявшихся владельцев плюшевых британских котов.</p>
               </CardContent>
             </Card>
             
