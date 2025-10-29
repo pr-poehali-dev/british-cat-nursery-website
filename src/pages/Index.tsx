@@ -139,7 +139,7 @@ const Index = () => {
 
       <section id="about" className="py-20 px-6 bg-muted/30">
         <div className="container mx-auto">
-          <h2 className="text-5xl font-bold text-center text-primary mb-16">О питомнике БриМурр</h2>
+          <h2 className="text-5xl font-bold text-center text-primary mb-16"> БриМурр</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-8 text-center">
