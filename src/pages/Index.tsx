@@ -8,6 +8,7 @@ import Icon from '@/components/ui/icon';
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const scrollToSection = (section: string) => {
     setActiveSection(section);
@@ -156,22 +157,26 @@ const Index = () => {
                 <img 
                   src="https://cdn.poehali.dev/files/f79a51c0-e5ac-4a57-91f6-9956c8d65713.jpg"
                   alt="Забота о котятах 1"
-                  className="w-full h-32 object-cover"
+                  className="w-full h-32 object-cover cursor-pointer hover:opacity-80 transition-opacity"
+                  onClick={() => setSelectedImage('https://cdn.poehali.dev/files/f79a51c0-e5ac-4a57-91f6-9956c8d65713.jpg')}
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/2878a398-cfd7-4349-9218-6888cde0bc6e.jpg"
                   alt="Забота о котятах 2"
-                  className="w-full h-32 object-cover"
+                  className="w-full h-32 object-cover cursor-pointer hover:opacity-80 transition-opacity"
+                  onClick={() => setSelectedImage('https://cdn.poehali.dev/files/2878a398-cfd7-4349-9218-6888cde0bc6e.jpg')}
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/7744596d-6474-4093-a4f0-d77ce00f2a1a.jpg"
                   alt="Забота о котятах 3"
-                  className="w-full h-32 object-cover"
+                  className="w-full h-32 object-cover cursor-pointer hover:opacity-80 transition-opacity"
+                  onClick={() => setSelectedImage('https://cdn.poehali.dev/files/7744596d-6474-4093-a4f0-d77ce00f2a1a.jpg')}
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/81b30d6f-d1c7-40b6-ade8-2d6fb1e3229a.jpg"
                   alt="Забота о котятах 4"
-                  className="w-full h-32 object-cover"
+                  className="w-full h-32 object-cover cursor-pointer hover:opacity-80 transition-opacity"
+                  onClick={() => setSelectedImage('https://cdn.poehali.dev/files/81b30d6f-d1c7-40b6-ade8-2d6fb1e3229a.jpg')}
                 />
               </div>
               <CardContent className="p-8 text-center">
@@ -475,6 +480,26 @@ const Index = () => {
           </p>
         </div>
       </footer>
+
+      {selectedImage && (
+        <div 
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button 
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors"
+            onClick={() => setSelectedImage(null)}
+          >
+            <Icon name="X" size={32} />
+          </button>
+          <img 
+            src={selectedImage} 
+            alt="Увеличенное фото"
+            className="max-w-full max-h-full object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </div>
   );
 };
