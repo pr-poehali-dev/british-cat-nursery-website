@@ -273,16 +273,15 @@ const Index = () => {
 
             <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
               <img 
-                src="https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/1f5d5a8f-c4da-4711-83c9-f82b6f535fd2.jpg"
-                alt="Котёнок Барон"
-                className="w-full h-64 object-cover"
+                src="https://cdn.poehali.dev/files/8570490e-71d6-4758-9ae4-631f0871395c.jpg"
+                alt="Лиловый котик"
+                className="w-full h-auto object-contain"
               />
               <CardContent className="p-6">
-                <h3 className="text-2xl font-semibold mb-4">Барон</h3>
                 <div className="space-y-2 text-muted-foreground mb-6">
                   <div className="flex items-center gap-2">
                     <Icon name="Calendar" size={18} className="text-accent" />
-                    <span>Дата рождения: 20 августа 2024</span>
+                    <span>Дата рождения: 24 сентября 2025</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="Palette" size={18} className="text-accent" />
@@ -292,46 +291,134 @@ const Index = () => {
                     <Icon name="Sparkles" size={18} className="text-accent" />
                     <span>Пол: котик</span>
                   </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Scissors" size={18} className="text-accent" />
+                    <span>Длинношёрстный</span>
+                  </div>
                 </div>
-                <Button 
-                  onClick={() => scrollToSection('contact')}
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                <a
+                  href="https://t.me/brimur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-md transition-colors font-medium"
                 >
+                  <Icon name="Send" size={18} />
                   Забронировать
-                </Button>
+                </a>
               </CardContent>
             </Card>
 
             <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
               <img 
-                src="https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/c31e0fa1-657c-4492-88b1-dc335b555103.jpg"
-                alt="Котёнок Амелия"
-                className="w-full h-64 object-cover"
+                src="https://cdn.poehali.dev/files/df37de75-4067-4d06-9c7e-d25d3a0fe084.jpg"
+                alt="Лиловая кошечка"
+                className="w-full h-auto object-contain"
               />
               <CardContent className="p-6">
-                <h3 className="text-2xl font-semibold mb-4">Амелия</h3>
                 <div className="space-y-2 text-muted-foreground mb-6">
                   <div className="flex items-center gap-2">
                     <Icon name="Calendar" size={18} className="text-accent" />
-                    <span>Дата рождения: 5 октября 2024</span>
+                    <span>Дата рождения: 24 сентября 2025</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="Palette" size={18} className="text-accent" />
-                    <span>Окрас: кремовый</span>
+                    <span>Окрас: лиловый</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="Sparkles" size={18} className="text-accent" />
                     <span>Пол: кошечка</span>
                   </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Scissors" size={18} className="text-accent" />
+                    <span>Короткошёрстная</span>
+                  </div>
                 </div>
-                <Button 
-                  onClick={() => scrollToSection('contact')}
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                <a
+                  href="https://t.me/brimur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-md transition-colors font-medium"
                 >
+                  <Icon name="Send" size={18} />
                   Забронировать
-                </Button>
+                </a>
               </CardContent>
             </Card>
+
+            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <img 
+                src="https://cdn.poehali.dev/files/0e54ae8c-5f94-4c0e-8f4c-00b0b512a8fb.jpg"
+                alt="Голубая кошечка"
+                className="w-full h-auto object-contain"
+              />
+              <CardContent className="p-6">
+                <div className="space-y-2 text-muted-foreground mb-6">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Calendar" size={18} className="text-accent" />
+                    <span>Дата рождения: 24 сентября 2025</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Palette" size={18} className="text-accent" />
+                    <span>Окрас: голубой</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Sparkles" size={18} className="text-accent" />
+                    <span>Пол: кошечка</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Scissors" size={18} className="text-accent" />
+                    <span>Длинношёрстная</span>
+                  </div>
+                </div>
+                <a
+                  href="https://t.me/brimur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-md transition-colors font-medium"
+                >
+                  <Icon name="Send" size={18} />
+                  Забронировать
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <img 
+                src="https://cdn.poehali.dev/files/eb17dff2-ae47-42b2-8136-7da5c07e7867.jpg"
+                alt="Голубой котик"
+                className="w-full h-auto object-contain"
+              />
+              <CardContent className="p-6">
+                <div className="space-y-2 text-muted-foreground mb-6">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Calendar" size={18} className="text-accent" />
+                    <span>Дата рождения: 15 сентября 2025</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Palette" size={18} className="text-accent" />                    <span>Окрас: голубой</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Sparkles" size={18} className="text-accent" />
+                    <span>Пол: котик</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Scissors" size={18} className="text-accent" />
+                    <span>Короткошёрстный</span>
+                  </div>
+                </div>
+                <a
+                  href="https://t.me/brimur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-md transition-colors font-medium"
+                >
+                  <Icon name="Send" size={18} />
+                  Забронировать
+                </a>
+              </CardContent>
+            </Card>
+
+
           </div>
           
           <div className="mt-12 text-center bg-card p-8 rounded-2xl">
