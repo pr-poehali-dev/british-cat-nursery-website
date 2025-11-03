@@ -680,14 +680,14 @@ const Index = () => {
                   <Icon name="MapPin" size={24} className="text-accent mt-1" />
                   <div>
                     <p className="font-semibold">Адрес</p>
-                    <p className="text-muted-foreground">ЖК Восточная Абутова, Московская область</p>
+                    <p className="text-muted-foreground">ЖК Восточное Бутово, Московская область</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Icon name="Phone" size={24} className="text-accent mt-1" />
                   <div>
                     <p className="font-semibold">Телефон</p>
-                    <p className="text-muted-foreground">8-7-916-440-2501</p>
+                    <a href="https://wa.me/79164402501" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">+7 916 440 2501</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -698,7 +698,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="mt-6 pt-6 border-t border-border">
-                  <p className="text-xs text-muted-foreground mb-1"><strong>ИП Вакаева Вероника Дмитриевна</strong></p>
+                  <p className="text-xs text-muted-foreground mb-1"><strong>БриМурр</strong></p>
                   <p className="text-xs text-muted-foreground">ИНН: 770-481-882-204</p>
                   <p className="text-xs text-muted-foreground">ОГРНИП: 325-508-100-612-240</p>
                 </div>
