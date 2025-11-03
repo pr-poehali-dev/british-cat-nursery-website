@@ -140,40 +140,30 @@ const Index = () => {
 
       <section id="about" className="py-20 px-6 bg-muted/30">
         <div className="container mx-auto">
-          <h2 className="text-5xl font-bold text-center text-primary mb-16"> БриМурр</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Icon name="Award" size={32} className="text-accent" />
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">Профессионализм</h3>
-                <p className="text-muted-foreground">Многолетний опыт взаимодействия с породой. Около 100 состоявшихся владельцев плюшевых британских котов.</p>
-              </CardContent>
-            </Card>
-            
+          <h2 className="text-5xl font-bold text-center text-primary mb-16">О нас</h2>
+          <div className="grid md:grid-cols-2 gap-8">
             <Card className="hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-              <div className="grid grid-cols-2 gap-1">
+              <div className="grid grid-cols-3 gap-2 p-4">
                 <img 
                   src="https://cdn.poehali.dev/files/f79a51c0-e5ac-4a57-91f6-9956c8d65713.jpg"
                   alt="Забота о котятах 1"
-                  className="w-full h-48 object-cover cursor-pointer hover:opacity-80 transition-opacity"
+                  className="w-full h-48 object-cover cursor-pointer hover:opacity-80 transition-opacity rounded"
                   onClick={() => setSelectedImage('https://cdn.poehali.dev/files/f79a51c0-e5ac-4a57-91f6-9956c8d65713.jpg')}
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/2878a398-cfd7-4349-9218-6888cde0bc6e.jpg"
                   alt="Забота о котятах 2"
-                  className="w-full h-48 object-cover cursor-pointer hover:opacity-80 transition-opacity"
+                  className="w-full h-48 object-cover cursor-pointer hover:opacity-80 transition-opacity rounded"
                   onClick={() => setSelectedImage('https://cdn.poehali.dev/files/2878a398-cfd7-4349-9218-6888cde0bc6e.jpg')}
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/7744596d-6474-4093-a4f0-d77ce00f2a1a.jpg"
                   alt="Забота о котятах 3"
-                  className="w-full h-48 object-cover cursor-pointer hover:opacity-80 transition-opacity" colspan="2"
+                  className="w-full h-48 object-cover cursor-pointer hover:opacity-80 transition-opacity rounded"
                   onClick={() => setSelectedImage('https://cdn.poehali.dev/files/7744596d-6474-4093-a4f0-d77ce00f2a1a.jpg')}
                 />
               </div>
-              <CardContent className="p-8 text-center">
+              <CardContent className="p-8">
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Icon name="Heart" size={32} className="text-accent" />
                 </div>
@@ -197,18 +187,6 @@ const Index = () => {
                   
                   <p>— ну и немного милоты: картины с изображением британских котиков нам написала художник из Санкт-Петербурга. Её <a href="https://www.avito.ru/brands/33b5060dfb8ca8d74e439fe600057b91/items/all?sellerId=62ee7bebe98369737342681e5f145a3d&s=search_page_share" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">профиль на Авито</a>.</p>
                 </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="hover:shadow-xl transition-shadow duration-300">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Icon name="Home" size={32} className="text-accent" />
-                </div>
-                <h3 className="text-2xl font-semibold mb-4">Домашняя атмосфера</h3>
-                <p className="text-muted-foreground">
-                  Котята растут в семейной обстановке, окружённые любовью и вниманием
-                </p>
               </CardContent>
             </Card>
 
