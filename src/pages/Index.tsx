@@ -242,7 +242,7 @@ const Index = () => {
               <img 
                 src="https://cdn.poehali.dev/files/95e0efc7-d4f2-41e1-ad6d-558c38bbbcde.jpg"
                 alt="Лиловый котик"
-                className="w-full h-64 object-cover"
+                className="w-full h-auto object-contain"
               />
               <CardContent className="p-6">
                 <div className="space-y-2 text-muted-foreground mb-6">
