@@ -700,7 +700,7 @@ const Index = () => {
                 <div className="mt-6 pt-6 border-t border-border">
                   <p className="text-xs text-muted-foreground mb-1"><strong>ИП Вакаева Вероника Дмитриевна</strong></p>
                   <p className="text-xs text-muted-foreground">ИНН: 770-481-882-204</p>
-                  <p className="text-xs text-muted-foreground">ОГРН: 325-508-100-612-240</p>
+                  <p className="text-xs text-muted-foreground">ОГРНИП: 325-508-100-612-240</p>
                 </div>
               </div>
             </div>
