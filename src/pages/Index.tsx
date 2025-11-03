@@ -258,6 +258,13 @@ const Index = () => {
                     <Icon name="Sparkles" size={18} className="text-accent" />
                     <span>Пол: котик</span>
                   </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Scissors" size={18} className="text-accent" />
+                    <span>Короткошёрстный</span>
+                  </div>
+                </div>
+                <div className="text-center mb-4">
+                  <p className="text-3xl font-bold text-accent">60 000 ₽</p>
                 </div>
                 <a
                   href="https://t.me/brimur"
@@ -293,11 +300,8 @@ const Index = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="Scissors" size={18} className="text-accent" />
-                    <span>Короткошёрстный</span>
+                    <span>Длинношёрстный</span>
                   </div>
-                </div>
-                <div className="text-center mb-4">
-                  <p className="text-3xl font-bold text-accent">60 000 ₽</p>
                 </div>
                 <a
                   href="https://t.me/brimur"
@@ -336,9 +340,6 @@ const Index = () => {
                     <span>Короткошёрстная</span>
                   </div>
                 </div>
-                <div className="text-center mb-4">
-                  <p className="text-3xl font-bold text-accent">70 000 ₽</p>
-                </div>
                 <a
                   href="https://t.me/brimur"
                   target="_blank"
@@ -376,9 +377,6 @@ const Index = () => {
                     <span>Длинношёрстная</span>
                   </div>
                 </div>
-                <div className="text-center mb-4">
-                  <p className="text-3xl font-bold text-accent">60 000 ₽</p>
-                </div>
                 <a
                   href="https://t.me/brimur"
                   target="_blank"
@@ -414,9 +412,6 @@ const Index = () => {
                     <Icon name="Scissors" size={18} className="text-accent" />
                     <span>Короткошёрстный</span>
                   </div>
-                </div>
-                <div className="text-center mb-4">
-                  <p className="text-3xl font-bold text-accent">70 000 ₽</p>
                 </div>
                 <a
                   href="https://t.me/brimur"
