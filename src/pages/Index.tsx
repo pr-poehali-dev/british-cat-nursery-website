@@ -575,7 +575,7 @@ const Index = () => {
               <div>
                 <Icon name="FileCheck" size={24} className="text-accent mb-3" />
                 <h4 className="font-semibold mb-2">Документы</h4>
-                <p className="text-sm text-muted-foreground">Документы происхождения, ветпаспорт, договор купли-продажи</p>
+                <p className="text-sm text-muted-foreground">Документ о происхождении, ветпаспорт, договор купли-продажи</p>
               </div>
               <div>
                 <Icon name="Shield" size={24} className="text-accent mb-3" />
@@ -600,7 +600,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-accent/10 border-2 border-accent rounded-xl p-6">
+            <div className="bg-accent/10 border-2 border-accent rounded-xl p-6 mb-6">
               <div className="flex items-start gap-3">
                 <Icon name="Tag" size={28} className="text-accent flex-shrink-0 mt-1" />
                 <div className="text-left">
@@ -609,6 +609,17 @@ const Index = () => {
                     Так как мы заботимся о своих питомцах, а также о тех, кого мы передаём новым хозяевам, 
                     мы предоставляем скидку всем покупателям, у которых предустановлены сетки «Антикошка». 
                     Скидка составляет 5% от стоимости котёнка.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-blue-50 border-2 border-blue-500 rounded-xl p-6">
+              <div className="flex items-start gap-3">
+                <Icon name="CreditCard" size={28} className="text-blue-600 flex-shrink-0 mt-1" />
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg mb-2 text-blue-900">Мы принимаем только безналичную оплату</h4>
+                  <p className="text-sm text-blue-800">
+                    Для вашего удобства и безопасности все расчёты производятся безналичным способом.
                   </p>
                 </div>
               </div>
@@ -662,6 +673,76 @@ const Index = () => {
                 </div>
               </div>
             </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img 
+                src="https://cdn.poehali.dev/files/b0feae91-95cd-41fb-bbae-0eb44f3d6165.jpg"
+                alt="Папа"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white text-2xl font-semibold">Папа</h3>
+                  <p className="text-white/90">Производитель</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img 
+                src="https://cdn.poehali.dev/files/a6088cdf-8c38-439b-b9f8-e8e989826385.jpg"
+                alt="Новогоднее фото"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white text-2xl font-semibold">Праздник</h3>
+                  <p className="text-white/90">Новогоднее настроение</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img 
+                src="https://cdn.poehali.dev/files/82a1765b-c14e-4c89-9edf-ffa334f70056.jpg"
+                alt="Мама с котятами"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white text-2xl font-semibold">Семья</h3>
+                  <p className="text-white/90">Мама с котятами</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img 
+                src="https://cdn.poehali.dev/files/7055a6d5-df47-4be3-b66c-5c4aba1be4f5.jpg"
+                alt="Британский котёнок"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white text-2xl font-semibold">Красавчик</h3>
+                  <p className="text-white/90">Голубой британец</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+              <img 
+                src="https://cdn.poehali.dev/files/2dff0f30-4f06-45b9-8d23-e94a4993f965.jpg"
+                alt="Папа"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white text-2xl font-semibold">Папа</h3>
+                  <p className="text-white/90">Производитель</p>
+                </div>
+              </div>
+            </div>
           </div>
 
 
@@ -695,6 +776,18 @@ const Index = () => {
                   <div>
                     <p className="font-semibold">Telegram</p>
                     <a href="https://t.me/brimur" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">@brimur</a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Icon name="ShoppingBag" size={24} className="text-accent mt-1" />
+                  <div>
+                    <p className="font-semibold">Мы на <a href="https://www.avito.ru/brands/i346680311" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Авито</a></p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Icon name="Youtube" size={24} className="text-accent mt-1" />
+                  <div>
+                    <p className="font-semibold">Мы на <a href="https://m.youtube.com/channel/UCBqtn8tdy9d1FyynwGBBMvg" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">YouTube</a></p>
                   </div>
                 </div>
                 <div className="mt-6 pt-6 border-t border-border">
