@@ -303,6 +303,9 @@ const Index = () => {
                     <span>Длинношёрстный</span>
                   </div>
                 </div>
+                <div className="text-center mb-4">
+                  <p className="text-3xl font-bold text-accent">70 000 ₽</p>
+                </div>
                 <a
                   href="https://t.me/brimur"
                   target="_blank"
@@ -339,6 +342,9 @@ const Index = () => {
                     <Icon name="Scissors" size={18} className="text-accent" />
                     <span>Короткошёрстная</span>
                   </div>
+                </div>
+                <div className="text-center mb-4">
+                  <p className="text-3xl font-bold text-accent">60 000 ₽</p>
                 </div>
                 <a
                   href="https://t.me/brimur"
@@ -377,6 +383,9 @@ const Index = () => {
                     <span>Длинношёрстная</span>
                   </div>
                 </div>
+                <div className="text-center mb-4">
+                  <p className="text-3xl font-bold text-accent">60 000 ₽</p>
+                </div>
                 <a
                   href="https://t.me/brimur"
                   target="_blank"
@@ -413,6 +422,135 @@ const Index = () => {
                     <span>Короткошёрстный</span>
                   </div>
                 </div>
+                <div className="text-center mb-4">
+                  <p className="text-3xl font-bold text-accent">70 000 ₽</p>
+                </div>
+                <a
+                  href="https://t.me/brimur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-md transition-colors font-medium"
+                >
+                  <Icon name="Send" size={18} />
+                  Забронировать
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <img 
+                src="https://cdn.poehali.dev/files/b0175a6e-5d21-4136-9c26-d3a3affe6adb.jpg"
+                alt="Голубой котик"
+                className="w-full h-auto object-contain"
+              />
+              <CardContent className="p-6">
+                <div className="space-y-2 text-muted-foreground mb-6">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Calendar" size={18} className="text-accent" />
+                    <span>Дата рождения: 27 июня 2025</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Palette" size={18} className="text-accent" />
+                    <span>Окрас: голубой</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Sparkles" size={18} className="text-accent" />
+                    <span>Пол: котик</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Scissors" size={18} className="text-accent" />
+                    <span>Короткошёрстный</span>
+                  </div>
+                </div>
+                <div className="text-center mb-4">
+                  <p className="text-3xl font-bold text-accent">40 000 ₽</p>
+                </div>
+                <a
+                  href="https://t.me/brimur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-md transition-colors font-medium"
+                >
+                  <Icon name="Send" size={18} />
+                  Забронировать
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <img 
+                src="https://cdn.poehali.dev/files/c6c86712-b576-4d83-9f3a-d4c51123b869.jpg"
+                alt="Голубая кошечка"
+                className="w-full h-auto object-contain"
+              />
+              <CardContent className="p-6">
+                <div className="space-y-2 text-muted-foreground mb-6">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Calendar" size={18} className="text-accent" />
+                    <span>Дата рождения: 27 июня 2025</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Palette" size={18} className="text-accent" />
+                    <span>Окрас: голубой</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Sparkles" size={18} className="text-accent" />
+                    <span>Пол: кошечка</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Scissors" size={18} className="text-accent" />
+                    <span>Короткошёрстная</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="AlertCircle" size={18} className="text-accent" />
+                    <span>Племенной брак (залом хвоста)</span>
+                  </div>
+                </div>
+                <div className="text-center mb-4">
+                  <p className="text-sm text-muted-foreground mb-2">Залом хвоста никак не отражается на жизни и здоровье кошечки, только визуальный дефект</p>
+                  <p className="text-3xl font-bold text-accent">20 000 ₽</p>
+                </div>
+                <a
+                  href="https://t.me/brimur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-md transition-colors font-medium"
+                >
+                  <Icon name="Send" size={18} />
+                  Забронировать
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <img 
+                src="https://cdn.poehali.dev/files/35eb5942-c82e-49a1-a737-ff746ff441de.jpg"
+                alt="Голубая кошечка"
+                className="w-full h-auto object-contain"
+              />
+              <CardContent className="p-6">
+                <div className="space-y-2 text-muted-foreground mb-6">
+                  <div className="flex items-center gap-2">
+                    <Icon name="Calendar" size={18} className="text-accent" />
+                    <span>Дата рождения: 12 апреля 2025</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Palette" size={18} className="text-accent" />
+                    <span>Окрас: голубой</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Sparkles" size={18} className="text-accent" />
+                    <span>Пол: кошечка</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Scissors" size={18} className="text-accent" />
+                    <span>Короткошёрстная</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Shield" size={18} className="text-accent" />
+                    <span>Чипирована</span>
+                  </div>
+                </div>
                 <a
                   href="https://t.me/brimur"
                   target="_blank"
@@ -430,7 +568,7 @@ const Index = () => {
           
           <div className="mt-12 text-center bg-card p-8 rounded-2xl">
             <h3 className="text-2xl font-semibold mb-4">Условия приобретения</h3>
-            <div className="grid md:grid-cols-3 gap-6 text-left">
+            <div className="grid md:grid-cols-3 gap-6 text-left mb-8">
               <div>
                 <Icon name="FileCheck" size={24} className="text-accent mb-3" />
                 <h4 className="font-semibold mb-2">Документы</h4>
@@ -445,6 +583,19 @@ const Index = () => {
                 <Icon name="Heart" size={24} className="text-accent mb-3" />
                 <h4 className="font-semibold mb-2">Поддержка</h4>
                 <p className="text-sm text-muted-foreground">Консультации и помощь после приобретения</p>
+              </div>
+            </div>
+            <div className="bg-accent/10 border-2 border-accent rounded-xl p-6">
+              <div className="flex items-start gap-3">
+                <Icon name="Tag" size={28} className="text-accent flex-shrink-0 mt-1" />
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg mb-2">Скидка 5% при наличии сеток «Антикошка»</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Так как мы заботимся о своих питомцах, а также о тех, кого мы передаём новым хозяевам, 
+                    мы предоставляем скидку всем покупателям, у которых предустановлены сетки «Антикошка». 
+                    Скидка составляет 5% от стоимости котёнка.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
