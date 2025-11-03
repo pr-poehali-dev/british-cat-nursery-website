@@ -79,7 +79,7 @@ const Index = () => {
                   onClick={() => scrollToSection('about')}
                   className="text-left text-foreground hover:text-primary transition-colors py-2 border-b border-border"
                 >
-                  О питомнике
+                  О нас
                 </button>
                 <button 
                   onClick={() => scrollToSection('kittens')}
@@ -157,26 +157,20 @@ const Index = () => {
                 <img 
                   src="https://cdn.poehali.dev/files/f79a51c0-e5ac-4a57-91f6-9956c8d65713.jpg"
                   alt="Забота о котятах 1"
-                  className="w-full h-32 object-cover cursor-pointer hover:opacity-80 transition-opacity"
+                  className="w-full h-48 object-cover cursor-pointer hover:opacity-80 transition-opacity"
                   onClick={() => setSelectedImage('https://cdn.poehali.dev/files/f79a51c0-e5ac-4a57-91f6-9956c8d65713.jpg')}
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/2878a398-cfd7-4349-9218-6888cde0bc6e.jpg"
                   alt="Забота о котятах 2"
-                  className="w-full h-32 object-cover cursor-pointer hover:opacity-80 transition-opacity"
+                  className="w-full h-48 object-cover cursor-pointer hover:opacity-80 transition-opacity"
                   onClick={() => setSelectedImage('https://cdn.poehali.dev/files/2878a398-cfd7-4349-9218-6888cde0bc6e.jpg')}
                 />
                 <img 
                   src="https://cdn.poehali.dev/files/7744596d-6474-4093-a4f0-d77ce00f2a1a.jpg"
                   alt="Забота о котятах 3"
-                  className="w-full h-32 object-cover cursor-pointer hover:opacity-80 transition-opacity"
+                  className="w-full h-48 object-cover cursor-pointer hover:opacity-80 transition-opacity" colspan="2"
                   onClick={() => setSelectedImage('https://cdn.poehali.dev/files/7744596d-6474-4093-a4f0-d77ce00f2a1a.jpg')}
-                />
-                <img 
-                  src="https://cdn.poehali.dev/files/81b30d6f-d1c7-40b6-ade8-2d6fb1e3229a.jpg"
-                  alt="Забота о котятах 4"
-                  className="w-full h-32 object-cover cursor-pointer hover:opacity-80 transition-opacity"
-                  onClick={() => setSelectedImage('https://cdn.poehali.dev/files/81b30d6f-d1c7-40b6-ade8-2d6fb1e3229a.jpg')}
                 />
               </div>
               <CardContent className="p-8 text-center">
@@ -199,9 +193,9 @@ const Index = () => {
                   
                   <p>— для физической активности установлен комплекс с когтеточками и настенным столбиком;</p>
                   
-                  <p>— стены в комнате обшиты гипсовым кирпичом, так как котята, как и маленькие дети, тянут всё в рот, включая обои;
-- ну и немного милоты: картины с изображением британских котиков нам написала художник из Санкт-Петербурга. Её профиль на Авито
-https://www.avito.ru/brands/33b5060dfb8ca8d74e439fe600057b91/items/all?sellerId=62ee7bebe98369737342681e5f145a3d&s=search_page_share</p>
+                  <p>— стены в комнате обшиты гипсовым кирпичом, так как котята, как и маленькие дети, тянут всё в рот, включая обои.</p>
+                  
+                  <p>— ну и немного милоты: картины с изображением британских котиков нам написала художник из Санкт-Петербурга. Её <a href="https://www.avito.ru/brands/33b5060dfb8ca8d74e439fe600057b91/items/all?sellerId=62ee7bebe98369737342681e5f145a3d&s=search_page_share" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">профиль на Авито</a>.</p>
                 </div>
               </CardContent>
             </Card>
@@ -215,6 +209,32 @@ https://www.avito.ru/brands/33b5060dfb8ca8d74e439fe600057b91/items/all?sellerId=
                 <p className="text-muted-foreground">
                   Котята растут в семейной обстановке, окружённые любовью и вниманием
                 </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Icon name="FileText" size={32} className="text-accent" />
+                </div>
+                <h3 className="text-2xl font-semibold mb-4 text-center">Правила посещения</h3>
+                <div className="text-muted-foreground text-left space-y-4">
+                  <p className="font-semibold">Уважаемый покупатель!</p>
+                  
+                  <p>Мы дорожим здоровьем наших питомцев, поэтому просим Вас перед посещением нашего дома ознакомиться со следующей информацией:</p>
+                  
+                  <p>— Перед входом в квартиру наденьте, пожалуйста, бахилы и обработайте руки спиртовыми салфетками (эти расходники мы Вам предоставим). Данная мера необходима, так как в нашем доме почти всегда есть маленькие котята и/или беременные кошки, а вирусы можно принести на обуви или на руках;</p>
+                  
+                  <p>— Мы очень просим не гладить наших животных. Так как Вы находитесь в поиске нового питомца, мы не можем быть уверены, что Вы не посещали до нас другие питомники, откуда можно принести различные вирусные/инфекционные заболевания;</p>
+                  
+                  <p>— Не берите котят на руки. Они Вас не знают, и это может их напугать. Мы уже столкнулись однажды с ситуацией, когда мужчина, подняв котёнка на руки, уронил его с высоты своего роста об ламинат. Стресс и у нас, и у котёнка. Если Вы хотите рассмотреть понравившегося малыша, мы сами поднимем его и покажем поближе;</p>
+                  
+                  <p>— Внимательно смотрите под ноги, наши кошки любопытные и будут крутиться вокруг Вас, поэтому есть риск на них наступить;</p>
+                  
+                  <p>— Вас будут встречать только те кошки, которые сами захотели выйти. В нашем доме в общей сложности проживает 9 взрослых животных. У каждого свои привычки и свой ритм жизни. Частые приходы людей могут нарушать их покой. Мы не хотим заставлять их жить по принципу контактного зоопарка.</p>
+                  
+                  <p>Просим с пониманием отнестись к данным требованиям. Ведь это и Ваша уверенность в том, что Вы приобрели здорового котёнка.</p>
+                </div>
               </CardContent>
             </Card>
           </div>
