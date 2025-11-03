@@ -551,6 +551,9 @@ const Index = () => {
                     <span>Чипирована</span>
                   </div>
                 </div>
+                <div className="text-center mb-4">
+                  <p className="text-3xl font-bold text-accent">35 000 ₽</p>
+                </div>
                 <a
                   href="https://t.me/brimur"
                   target="_blank"
@@ -572,7 +575,7 @@ const Index = () => {
               <div>
                 <Icon name="FileCheck" size={24} className="text-accent mb-3" />
                 <h4 className="font-semibold mb-2">Документы</h4>
-                <p className="text-sm text-muted-foreground">Метрика, ветпаспорт, договор купли-продажи</p>
+                <p className="text-sm text-muted-foreground">Документы происхождения, ветпаспорт, договор купли-продажи</p>
               </div>
               <div>
                 <Icon name="Shield" size={24} className="text-accent mb-3" />
@@ -583,6 +586,18 @@ const Index = () => {
                 <Icon name="Heart" size={24} className="text-accent mb-3" />
                 <h4 className="font-semibold mb-2">Поддержка</h4>
                 <p className="text-sm text-muted-foreground">Консультации и помощь после приобретения</p>
+              </div>
+            </div>
+            <div className="bg-green-50 border-2 border-green-500 rounded-xl p-6 mb-6">
+              <div className="flex items-start gap-3">
+                <Icon name="BadgeCheck" size={28} className="text-green-600 flex-shrink-0 mt-1" />
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg mb-2 text-green-900">Чек о покупке</h4>
+                  <p className="text-sm text-green-800">
+                    Мы один из немногих питомников, если не единственный, который предоставляет чек о покупке. 
+                    Наша деятельность прозрачна как для покупателя, так и для налоговой.
+                  </p>
+                </div>
               </div>
             </div>
             <div className="bg-accent/10 border-2 border-accent rounded-xl p-6">
@@ -649,15 +664,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="mt-16 bg-muted/30 rounded-2xl p-12">
-            <h3 className="text-3xl font-semibold text-center mb-8">Видео о питомнике</h3>
-            <div className="aspect-video bg-card rounded-xl flex items-center justify-center border-2 border-dashed border-border">
-              <div className="text-center">
-                <Icon name="Play" size={64} className="text-muted-foreground mx-auto mb-4" />
-                <p className="text-muted-foreground">Видео скоро появится</p>
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
 
@@ -673,60 +680,43 @@ const Index = () => {
                   <Icon name="MapPin" size={24} className="text-accent mt-1" />
                   <div>
                     <p className="font-semibold">Адрес</p>
-                    <p className="text-muted-foreground">Москва</p>
+                    <p className="text-muted-foreground">ЖК Восточная Абутова, Московская область</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Icon name="Phone" size={24} className="text-accent mt-1" />
                   <div>
                     <p className="font-semibold">Телефон</p>
-                    <p className="text-muted-foreground">+7 (XXX) XXX-XX-XX</p>
+                    <p className="text-muted-foreground">8-7-916-440-2501</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <Icon name="Mail" size={24} className="text-accent mt-1" />
+                  <Icon name="Send" size={24} className="text-accent mt-1" />
                   <div>
-                    <p className="font-semibold">Email</p>
-                    <p className="text-muted-foreground">info@brimurr.ru</p>
+                    <p className="font-semibold">Telegram</p>
+                    <a href="https://t.me/brimur" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">@brimur</a>
                   </div>
+                </div>
+                <div className="mt-6 pt-6 border-t border-border">
+                  <p className="text-xs text-muted-foreground mb-1"><strong>ИП Вакаева Вероника Дмитриевна</strong></p>
+                  <p className="text-xs text-muted-foreground">ИНН: 770-481-882-204</p>
+                  <p className="text-xs text-muted-foreground">ОГРН: 325-508-100-612-240</p>
                 </div>
               </div>
             </div>
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-2xl font-semibold mb-6">Напишите нам</h3>
-                <form className="space-y-4">
-                  <div>
-                    <Input 
-                      placeholder="Ваше имя" 
-                      className="w-full"
-                    />
-                  </div>
-                  <div>
-                    <Input 
-                      type="email"
-                      placeholder="Email" 
-                      className="w-full"
-                    />
-                  </div>
-                  <div>
-                    <Input 
-                      type="tel"
-                      placeholder="Телефон" 
-                      className="w-full"
-                    />
-                  </div>
-                  <div>
-                    <Textarea 
-                      placeholder="Ваше сообщение" 
-                      className="w-full min-h-32"
-                    />
-                  </div>
-                  <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                    Отправить
-                  </Button>
-                </form>
+                <h3 className="text-2xl font-semibold mb-6 text-center">Связаться с нами</h3>
+                <a
+                  href="https://t.me/brimur"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3 w-full bg-accent hover:bg-accent/90 text-accent-foreground px-6 py-4 rounded-lg transition-colors font-semibold text-lg"
+                >
+                  <Icon name="Send" size={24} />
+                  Написать в Telegram
+                </a>
               </CardContent>
             </Card>
           </div>
@@ -775,6 +765,16 @@ const Index = () => {
           />
         </div>
       )}
+
+      <a
+        href="https://t.me/brimur"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-accent hover:bg-accent/90 text-accent-foreground p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 z-40 flex items-center justify-center"
+        aria-label="Написать в Telegram"
+      >
+        <Icon name="Send" size={28} />
+      </a>
     </div>
   );
 };
