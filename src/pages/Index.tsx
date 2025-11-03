@@ -632,7 +632,10 @@ const Index = () => {
         <div className="container mx-auto">
           <h2 className="text-5xl font-bold text-center text-primary mb-16">Галерея</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage("https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/9b90b5d1-ef2e-4f94-b286-2008590ee627.jpg")}
+            >
               <img 
                 src="https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/9b90b5d1-ef2e-4f94-b286-2008590ee627.jpg"
                 alt="Британская кошка"
@@ -646,7 +649,10 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage("https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/1f5d5a8f-c4da-4711-83c9-f82b6f535fd2.jpg")}
+            >
               <img 
                 src="https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/1f5d5a8f-c4da-4711-83c9-f82b6f535fd2.jpg"
                 alt="Британский котёнок"
@@ -660,7 +666,10 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage("https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/c31e0fa1-657c-4492-88b1-dc335b555103.jpg")}
+            >
               <img 
                 src="https://cdn.poehali.dev/projects/4e224241-3b71-4651-8c6f-8c8c2034fedd/files/c31e0fa1-657c-4492-88b1-dc335b555103.jpg"
                 alt="Британская кошка"
@@ -674,7 +683,10 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage("https://cdn.poehali.dev/files/b0feae91-95cd-41fb-bbae-0eb44f3d6165.jpg")}
+            >
               <img 
                 src="https://cdn.poehali.dev/files/b0feae91-95cd-41fb-bbae-0eb44f3d6165.jpg"
                 alt="Папа"
@@ -688,7 +700,10 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage("https://cdn.poehali.dev/files/a6088cdf-8c38-439b-b9f8-e8e989826385.jpg")}
+            >
               <img 
                 src="https://cdn.poehali.dev/files/a6088cdf-8c38-439b-b9f8-e8e989826385.jpg"
                 alt="Новогоднее фото"
@@ -702,7 +717,10 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage("https://cdn.poehali.dev/files/82a1765b-c14e-4c89-9edf-ffa334f70056.jpg")}
+            >
               <img 
                 src="https://cdn.poehali.dev/files/82a1765b-c14e-4c89-9edf-ffa334f70056.jpg"
                 alt="Мама с котятами"
@@ -716,7 +734,10 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage("https://cdn.poehali.dev/files/7055a6d5-df47-4be3-b66c-5c4aba1be4f5.jpg")}
+            >
               <img 
                 src="https://cdn.poehali.dev/files/7055a6d5-df47-4be3-b66c-5c4aba1be4f5.jpg"
                 alt="Британский котёнок"
@@ -730,7 +751,10 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
+            <div 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage("https://cdn.poehali.dev/files/2dff0f30-4f06-45b9-8d23-e94a4993f965.jpg")}
+            >
               <img 
                 src="https://cdn.poehali.dev/files/2dff0f30-4f06-45b9-8d23-e94a4993f965.jpg"
                 alt="Папа"
@@ -740,6 +764,91 @@ const Index = () => {
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="text-white text-2xl font-semibold">Папа</h3>
                   <p className="text-white/90">Производитель</p>
+                </div>
+              </div>
+            </div>
+
+            <div 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage("https://cdn.poehali.dev/files/c705dbef-2be6-43d2-8ea9-0e1a173c2a89.jpg")}
+            >
+              <img 
+                src="https://cdn.poehali.dev/files/c705dbef-2be6-43d2-8ea9-0e1a173c2a89.jpg"
+                alt="Британская кошка"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white text-2xl font-semibold">Комфорт</h3>
+                  <p className="text-white/90">На любимой лежанке</p>
+                </div>
+              </div>
+            </div>
+
+            <div 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage("https://cdn.poehali.dev/files/fde89f55-594b-45bc-8a48-0c08706cd3a9.jpg")}
+            >
+              <img 
+                src="https://cdn.poehali.dev/files/fde89f55-594b-45bc-8a48-0c08706cd3a9.jpg"
+                alt="Софа"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white text-2xl font-semibold">Софа</h3>
+                  <p className="text-white/90">Фотосессия</p>
+                </div>
+              </div>
+            </div>
+
+            <div 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage("https://cdn.poehali.dev/files/d4612fd6-284e-4a76-b9f3-1869ff9592d3.jpg")}
+            >
+              <img 
+                src="https://cdn.poehali.dev/files/d4612fd6-284e-4a76-b9f3-1869ff9592d3.jpg"
+                alt="Бэба"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white text-2xl font-semibold">Бэба</h3>
+                  <p className="text-white/90">Мама-кошка</p>
+                </div>
+              </div>
+            </div>
+
+            <div 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage("https://cdn.poehali.dev/files/7044a2e1-43a3-411a-93d5-046812b28143.jpg")}
+            >
+              <img 
+                src="https://cdn.poehali.dev/files/7044a2e1-43a3-411a-93d5-046812b28143.jpg"
+                alt="Бэба с котятами"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white text-2xl font-semibold">Бэба с котятами</h3>
+                  <p className="text-white/90">Семейное фото</p>
+                </div>
+              </div>
+            </div>
+
+            <div 
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage("https://cdn.poehali.dev/files/9eba28e9-0529-4f42-94e8-dc94f574daf7.jpg")}
+            >
+              <img 
+                src="https://cdn.poehali.dev/files/9eba28e9-0529-4f42-94e8-dc94f574daf7.jpg"
+                alt="Голубой британец"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="text-white text-2xl font-semibold">Релакс</h3>
+                  <p className="text-white/90">На лежанке</p>
                 </div>
               </div>
             </div>
@@ -765,9 +874,11 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <Icon name="Phone" size={24} className="text-accent mt-1" />
+                  <svg className="text-accent mt-1" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                  </svg>
                   <div>
-                    <p className="font-semibold">Телефон</p>
+                    <p className="font-semibold">Телефон (WhatsApp)</p>
                     <a href="https://wa.me/79164402501" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">+7 916 440 2501</a>
                   </div>
                 </div>
@@ -823,19 +934,18 @@ const Index = () => {
             Питомник британских кошек в Москве
           </p>
           <div className="flex justify-center gap-6">
-            <a href="#" className="hover:text-accent transition-colors">
-              <Icon name="Instagram" size={24} />
+            <a href="https://t.me/brimur" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+              <Icon name="Send" size={24} />
             </a>
-            <a href="#" className="hover:text-accent transition-colors">
-              <Icon name="Phone" size={24} />
+            <a href="https://wa.me/79164402501" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
             </a>
-            <a href="#" className="hover:text-accent transition-colors">
-              <Icon name="Mail" size={24} />
+            <a href="https://m.youtube.com/channel/UCBqtn8tdy9d1FyynwGBBMvg" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+              <Icon name="Youtube" size={24} />
             </a>
           </div>
-          <p className="text-primary-foreground/60 mt-8 text-sm">
-            © 2024 БриМурр. Все права защищены.
-          </p>
         </div>
       </footer>
 
