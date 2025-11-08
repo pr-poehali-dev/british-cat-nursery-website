@@ -114,12 +114,12 @@ const Index = () => {
         </nav>
       </header>
 
-      <section id="home" className="pt-32 pb-20 px-6">
-        <div className="container mx-auto">
+      <section id="home" className="pt-32 pb-20 px-4 sm:px-6">
+        <div className="container mx-auto max-w-7xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <h2 className="text-6xl font-bold text-primary mb-6">Домашний питомник британских кошек в Москве</h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">Вы явно заглянули сюда в поисках нового друга! Мы на 99% уверены, что Ваше сердце будет украдено именно нашим котёнком. Знакомьтесь с нами на сайте и в Telegram, влюбляйтесь и приходите забирать счастье в свой дом!</p>
+              <h2 className="text-4xl sm:text-6xl font-bold text-primary mb-6">Домашний питомник британских кошек в Москве</h2>
+              <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed">Вы явно заглянули сюда в поисках нового друга! Мы на 99% уверены, что Ваше сердце будет украдено именно нашим котёнком. Знакомьтесь с нами на сайте и в Telegram, влюбляйтесь и приходите забирать счастье в свой дом!</p>
               <Button 
                 onClick={() => scrollToSection('contact')}
                 className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg"
@@ -138,9 +138,9 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="about" className="py-20 px-6 bg-muted/30">
-        <div className="container mx-auto">
-          <h2 className="text-5xl font-bold text-center text-primary mb-16">О нас</h2>
+      <section id="about" className="py-20 px-4 sm:px-6 bg-muted/30">
+        <div className="container mx-auto max-w-7xl">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center text-primary mb-16">О нас</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="hover:shadow-xl transition-shadow duration-300 overflow-hidden">
               <div className="grid grid-cols-3 gap-2 p-4">
@@ -219,10 +219,10 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="kittens" className="py-20 px-6 bg-muted/30">
-        <div className="container mx-auto">
-          <h2 className="text-5xl font-bold text-center text-primary mb-8">Свободные котята</h2>
-          <div className="max-w-3xl mx-auto text-center mb-12">
+      <section id="kittens" className="py-20 px-4 sm:px-6 bg-muted/30">
+        <div className="container mx-auto max-w-7xl">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center text-primary mb-8">Свободные котята</h2>
+          <div className="max-w-5xl mx-auto text-center mb-12">
             <p className="text-lg text-muted-foreground mb-6">
               Фотографии котят могли уже устареть. За дополнительными фото и видео обращайтесь к нам
             </p>
@@ -279,26 +279,26 @@ const Index = () => {
                 <div className="text-center mb-4">
                   <p className="text-3xl font-bold text-accent">60 000 ₽</p>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-3 justify-center">
                   <a
                     href="https://t.me/brimur"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 flex-1 bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-md transition-colors font-medium"
+                    className="flex items-center justify-center w-12 h-12 bg-accent hover:bg-accent/90 text-accent-foreground rounded-full transition-all hover:scale-110 shadow-md"
+                    title="Telegram"
                   >
-                    <Icon name="Send" size={18} />
-                    Telegram
+                    <Icon name="Send" size={20} />
                   </a>
                   <a
                     href="https://wa.me/79164402501"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 flex-1 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors font-medium"
+                    className="flex items-center justify-center w-12 h-12 bg-green-600 hover:bg-green-700 text-white rounded-full transition-all hover:scale-110 shadow-md"
+                    title="WhatsApp"
                   >
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                     </svg>
-                    WhatsApp
                   </a>
                 </div>
               </CardContent>
@@ -385,26 +385,26 @@ const Index = () => {
                 <div className="text-center mb-4">
                   <p className="text-3xl font-bold text-accent">60 000 ₽</p>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-3 justify-center">
                   <a
                     href="https://t.me/brimur"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 flex-1 bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-md transition-colors font-medium"
+                    className="flex items-center justify-center w-12 h-12 bg-accent hover:bg-accent/90 text-accent-foreground rounded-full transition-all hover:scale-110 shadow-md"
+                    title="Telegram"
                   >
-                    <Icon name="Send" size={18} />
-                    Telegram
+                    <Icon name="Send" size={20} />
                   </a>
                   <a
                     href="https://wa.me/79164402501"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 flex-1 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors font-medium"
+                    className="flex items-center justify-center w-12 h-12 bg-green-600 hover:bg-green-700 text-white rounded-full transition-all hover:scale-110 shadow-md"
+                    title="WhatsApp"
                   >
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                     </svg>
-                    WhatsApp
                   </a>
                 </div>
               </CardContent>
@@ -438,26 +438,26 @@ const Index = () => {
                 <div className="text-center mb-4">
                   <p className="text-3xl font-bold text-accent">60 000 ₽</p>
                 </div>
-                <div className="flex gap-2">
+                <div className="flex gap-3 justify-center">
                   <a
                     href="https://t.me/brimur"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 flex-1 bg-accent hover:bg-accent/90 text-accent-foreground px-4 py-2 rounded-md transition-colors font-medium"
+                    className="flex items-center justify-center w-12 h-12 bg-accent hover:bg-accent/90 text-accent-foreground rounded-full transition-all hover:scale-110 shadow-md"
+                    title="Telegram"
                   >
-                    <Icon name="Send" size={18} />
-                    Telegram
+                    <Icon name="Send" size={20} />
                   </a>
                   <a
                     href="https://wa.me/79164402501"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 flex-1 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors font-medium"
+                    className="flex items-center justify-center w-12 h-12 bg-green-600 hover:bg-green-700 text-white rounded-full transition-all hover:scale-110 shadow-md"
+                    title="WhatsApp"
                   >
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                     </svg>
-                    WhatsApp
                   </a>
                 </div>
               </CardContent>
@@ -745,9 +745,9 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="gallery" className="py-20 px-6">
-        <div className="container mx-auto">
-          <h2 className="text-5xl font-bold text-center text-primary mb-16">Галерея</h2>
+      <section id="gallery" className="py-20 px-4 sm:px-6">
+        <div className="container mx-auto max-w-7xl">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center text-primary mb-16">Галерея</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div 
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
@@ -975,9 +975,9 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20 px-6 bg-muted/30">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-5xl font-bold text-center text-primary mb-16">Свяжитесь с нами</h2>
+      <section id="contact" className="py-20 px-4 sm:px-6 bg-muted/30">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-4xl sm:text-5xl font-bold text-center text-primary mb-16">Свяжитесь с нами</h2>
           
           <div className="grid md:grid-cols-2 gap-12 mb-12">
             <div>
