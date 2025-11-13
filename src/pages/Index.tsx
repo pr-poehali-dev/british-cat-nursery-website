@@ -333,7 +333,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="text-center mb-4">
-                  <p className="text-3xl font-bold text-accent">70 000 ₽</p>
+                  <p className="text-3xl font-bold text-accent">100 000 ₽</p>
                 </div>
                 <div className="flex gap-3 justify-center">
                   <a
@@ -360,7 +360,10 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300 border-4 border-yellow-500 relative">
+              <div className="absolute top-4 right-4 bg-yellow-500 text-white px-4 py-2 rounded-full font-bold shadow-lg z-10">
+                Зарезервирована
+              </div>
               <img 
                 src="https://cdn.poehali.dev/files/df37de75-4067-4d06-9c7e-d25d3a0fe084.jpg"
                 alt="Лиловая кошечка"
