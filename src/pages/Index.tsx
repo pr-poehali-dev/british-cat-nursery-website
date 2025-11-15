@@ -690,10 +690,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300 relative">
-              <div className="absolute top-4 left-4 bg-blue-500 text-white px-4 py-2 rounded-full font-bold shadow-lg z-10">
-                Котёнок
-              </div>
+            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
               <img 
                 src="https://cdn.poehali.dev/files/e463672c-4d2c-47a6-ab7c-0f3df42b0f27.jpg"
                 alt="Голубой котик"
@@ -716,6 +713,10 @@ const Index = () => {
                   <div className="flex items-center gap-2">
                     <Icon name="Scissors" size={18} className="text-accent" />
                     <span>Длинношёрстный</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Icon name="Heart" size={18} className="text-accent" />
+                    <span>Котёнок</span>
                   </div>
                 </div>
                 <div className="text-center mb-4">
