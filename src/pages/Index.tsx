@@ -307,7 +307,10 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300 border-4 border-yellow-500 relative">
+              <div className="absolute top-4 right-4 bg-yellow-500 text-white px-4 py-2 rounded-full font-bold shadow-lg z-10">
+                Зарезервирован
+              </div>
               <img 
                 src="https://cdn.poehali.dev/files/8570490e-71d6-4758-9ae4-631f0871395c.jpg"
                 alt="Лиловый котик"
@@ -469,7 +472,10 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+            <Card className="overflow-hidden hover:shadow-2xl transition-shadow duration-300 border-4 border-yellow-500 relative">
+              <div className="absolute top-4 right-4 bg-yellow-500 text-white px-4 py-2 rounded-full font-bold shadow-lg z-10">
+                Зарезервирован
+              </div>
               <img 
                 src="https://cdn.poehali.dev/files/eb17dff2-ae47-42b2-8136-7da5c07e7867.jpg"
                 alt="Голубой котик"
