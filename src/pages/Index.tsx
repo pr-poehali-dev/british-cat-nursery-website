@@ -426,11 +426,7 @@ const Index = () => {
               <div className="absolute top-4 right-4 bg-yellow-500 text-white px-4 py-2 rounded-full font-bold shadow-lg z-10">
                 Зарезервирована
               </div>
-              <img 
-                src="https://cdn.poehali.dev/files/df37de75-4067-4d06-9c7e-d25d3a0fe084.jpg"
-                alt="Лиловая кошечка"
-                className="w-full h-auto object-contain"
-              />
+              <KittenCarousel />
               <CardContent className="p-6">
                 <div className="space-y-2 text-muted-foreground mb-6">
                   <div className="flex items-center gap-2">
