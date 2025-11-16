@@ -5,6 +5,65 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import Icon from '@/components/ui/icon';
 
+const KittenCarousel = () => {
+  const images = [
+    'https://cdn.poehali.dev/files/e463672c-4d2c-47a6-ab7c-0f3df42b0f27.jpg',
+    'https://cdn.poehali.dev/files/7a169590-cc23-477f-93cc-8b2a5b3aa12f.jpg',
+    'https://cdn.poehali.dev/files/7f1a2746-6714-4894-8d82-60e98781e427.jpg',
+    'https://cdn.poehali.dev/files/0542672e-973f-4263-8908-a3554e187290.jpg',
+    'https://cdn.poehali.dev/files/196bd47f-fec9-4772-88cb-7467c784147b.jpg'
+  ];
+  
+  const [currentIndex, setCurrentIndex] = useState(0);
+  
+  const nextImage = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+  
+  const prevImage = () => {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+  };
+  
+  return (
+    <div className="relative group">
+      <img 
+        src={images[currentIndex]}
+        alt={`Голубой котик ${currentIndex + 1}`}
+        className="w-full h-auto object-contain"
+      />
+      
+      <button
+        onClick={prevImage}
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+        aria-label="Предыдущее фото"
+      >
+        <Icon name="ChevronLeft" size={24} />
+      </button>
+      
+      <button
+        onClick={nextImage}
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+        aria-label="Следующее фото"
+      >
+        <Icon name="ChevronRight" size={24} />
+      </button>
+      
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`w-2 h-2 rounded-full transition-all ${
+              index === currentIndex ? 'bg-white w-6' : 'bg-white/50'
+            }`}
+            aria-label={`Перейти к фото ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -694,11 +753,7 @@ const Index = () => {
               <div className="absolute top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded-full font-bold shadow-lg z-10">
                 Котёнок
               </div>
-              <img 
-                src="https://cdn.poehali.dev/files/e463672c-4d2c-47a6-ab7c-0f3df42b0f27.jpg"
-                alt="Голубой котик"
-                className="w-full h-auto object-contain"
-              />
+              <KittenCarousel />
               <CardContent className="p-6">
                 <div className="space-y-2 text-muted-foreground mb-6">
                   <div className="flex items-center gap-2">
@@ -719,7 +774,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="text-center mb-4">
-                  <p className="text-3xl font-bold text-accent">100 000 ₽</p>
+                  <p className="text-3xl font-bold text-accent">60 000 ₽</p>
                 </div>
                 <div className="flex gap-3 justify-center">
                   <a
