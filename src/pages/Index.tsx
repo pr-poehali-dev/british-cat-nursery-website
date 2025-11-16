@@ -7,7 +7,7 @@ import Icon from '@/components/ui/icon';
 
 const KittenCarousel = () => {
   const images = [
-    'https://cdn.poehali.dev/files/e463672c-4d2c-47a6-ab7c-0f3df42b0f27.jpg',
+    'https://cdn.poehali.dev/files/b0175a6e-5d21-4136-9c26-d3a3affe6adb.jpg',
     'https://cdn.poehali.dev/files/7a169590-cc23-477f-93cc-8b2a5b3aa12f.jpg',
     'https://cdn.poehali.dev/files/7f1a2746-6714-4894-8d82-60e98781e427.jpg',
     'https://cdn.poehali.dev/files/0542672e-973f-4263-8908-a3554e187290.jpg',
